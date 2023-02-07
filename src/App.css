@@ -5,8 +5,8 @@ ul{
 }
 
 nav ul li{
-  display: inline-flex;
-  justify-content: flex-end;
+  display: inline-block;
+  justify-content: center;
   padding: 10px;
   transition: background-color 500ms;
   cursor: pointer;
@@ -14,14 +14,14 @@ nav ul li{
 
 nav {
   display: flex;
-  background-color: #202122;
+  justify-content: space-between;
   align-items: center;
+  background-color: #202122;
   min-height: 90px;
- }
+}
 
 nav h1{
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: 0;
   color: #FFF
@@ -30,12 +30,11 @@ nav h1{
 nav h1 img{
   width: 70px;
   padding-right: 10px;
-  justify-content: flex-start;
 }
 
 
-nav ul li:hover,
-nav ul li:active{
+nav ul li:hover{
+  border-radius: 5px;
   background-color: #5a5a5a;
 }
 
@@ -45,4 +44,9 @@ nav ul li a{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 90%;
+}
+
+main img{
+  width: 100vw;
+  height: 50vw;
 }
