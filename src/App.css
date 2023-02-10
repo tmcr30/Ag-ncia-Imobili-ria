@@ -47,12 +47,12 @@ nav ul li a{
   font-size: 90%;
 }
 
-
-main img{
-  width: 99.10vw;
-  height: 50vw;
-  position: absolute;
-  
+body{
+  background-image: url("../public/images/imghomepage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .searchbar {
