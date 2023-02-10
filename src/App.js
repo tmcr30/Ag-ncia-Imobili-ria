@@ -1,8 +1,9 @@
 
 import './App.css';
-import Cards from './components/Cards';
-import Main from './components/Main';
 import Navbar from './components/Navbar';
+import Main from './components/Main';
+import Cards from './components/Cards';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <Main/>
       <Cards/>
+      <Footer/>
     </div>
   );
 }
