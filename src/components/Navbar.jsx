@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../components/logo.png";
 
 
 export default function Navbar(){
@@ -7,7 +6,7 @@ export default function Navbar(){
     return(
         <nav>
             <div>
-                <h1><img src={logo} alt="logo"/>Casas, Casinhas e Casarões</h1> 
+                <h1><img src="/images/logo.png" alt="logo"/>Casas, Casinhas e Casarões</h1> 
             </div>
             <div>
                 <ul>
