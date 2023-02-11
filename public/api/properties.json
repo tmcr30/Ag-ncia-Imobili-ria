@@ -1,0 +1,60 @@
+[
+    {
+        "properties_id":1,
+        "category":"Moradias",
+        "properties":[
+            {
+                "property_id": 1,
+                "name": "Moradia T4",
+                "details":[
+                    "Sintra",
+                    "4 Quartos", 
+                    "3 Wc's",
+                    "Piscina"
+                ],
+                "price":"450.000",
+                "image":"/public/images/casa1.png"
+            },
+            {
+                "property_id": 2,
+                "name": "Moradia T2",
+                "details":[
+                    "Algueirão-Mem Martins",
+                    "2 Quartos", 
+                    "2 Wc's"
+                ],
+                "price":"250.000",
+                "image":"/public/images/Casa3.png"
+            }
+        ]
+    },
+    {
+        "properties_id": 2,
+        "category": "Apartamentos",
+        "properties":[
+            {
+                "property_id": 3,
+                "name": "Apartamento T3",
+                "details":[
+                    "Estoril",
+                    "3 Quartos", 
+                    "2 Wc's",
+                    "Garagem"
+                ],
+                "price":"350.000",
+                "image":"/public/images/casa2.png"
+            },
+            {
+                "property_id": 4,
+                "name": "Apartamento T2",
+                "details":[
+                    "Agualva-Cacém",
+                    "2 Quartos", 
+                    "1 Wc's"
+                ],
+                "price":"180.000",
+                "image":"/public/images/casa4.png"
+            }
+        ]    
+    }
+]
