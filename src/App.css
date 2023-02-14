@@ -55,12 +55,19 @@ body{
   background-attachment: fixed;
 }
 
-.searchbar {
-  position: relative;
+.findHome{
+  background-color: #5a5a5a56;
   display: flex;
   justify-content: center;
-  padding-top: 10rem;
+  color: #fff;
 }
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+}
+
 
 .flip-card {
   position: relative;
@@ -69,7 +76,6 @@ body{
   height: 200px;
   perspective: 1000px;
 }
-
 
 .flip-card-inner {
   width: 100%;
@@ -80,11 +86,9 @@ body{
   display: flex;
 }
 
-
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
 
 .flip-card-front, .flip-card-back {
   width: 100%;
@@ -92,12 +96,10 @@ body{
   backface-visibility: hidden; 
 }
 
-
 .flip-card-front {
   background-color: #bbb;
   color: black;
 }
-
 
 .flip-card-back {
   background-color: #202122;
@@ -116,21 +118,28 @@ body{
   display: flex;
   justify-content: center;
   color: #202122;
-  
+  padding-top: 5rem;
+}
+
+.cards-properties{
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .imageProperties{
+  display: flex;
+  align-content: center;
   width: 300px;
   height: 200px;
 }
 
-
-
-
 .cards{
   display: flex;
   justify-content: space-around;
-  padding-top: 20rem;
+  padding-top: 15rem;
   padding-bottom: 10rem;
   cursor: pointer;
 }

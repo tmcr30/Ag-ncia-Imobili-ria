@@ -2,7 +2,7 @@
 export default function Footer(){
 
     return(
-        <footer class="footer">
+        <footer className="footer">
         <p>2023 Website, All Rights Reserved to someone</p>
         <ul>
             <li><a href="/">Facebook</a></li>

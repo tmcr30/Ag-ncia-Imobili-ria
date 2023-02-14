@@ -18,20 +18,20 @@ export default function Properties() {
         <main id="properties">
             {
                 properties.map( category => (
-                    <section className="propertyClass" key={ category.category_id }>
-                        <h2>{ category.category }</h2>
+                    <section key={ category.category_id }>
+                        <div className="propertyClass"><h2>{ category.category }</h2></div>
                         <div className="listing">
                         {
                             category.properties.map(
                                 property => (
                                     <div key={ property.properties_id }>   
-                                        <div className="cards">
-                                            <div class="flip-card">
-                                                <div class="flip-card-inner">
-                                                <div class="flip-card-front">
+                                        <div className="cards-properties">
+                                            <div className="flip-card">
+                                                <div className="flip-card-inner">
+                                                <div className="flip-card-front">
                                                     <img className="imageProperties" src={ property.image } alt=""/>
                                                 </div>
-                                                <div class="flip-card-back">
+                                                <div className="flip-card-back">
                                                     <h3>{ property.name }</h3>
                                                     <ul>
                                                     {
