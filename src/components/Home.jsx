@@ -6,7 +6,7 @@ export default function Home(){
             </div>
             <div>
                 <div className="searchbar">
-                    <form>
+                    <form className="searchbarHome">
                         <input type="text" placeholder="Pesquisar por local" name="search"/>
                         <button type="submit">Search</button>
                     </form>

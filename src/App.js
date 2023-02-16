@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home'
 import Properties from './components/Properties';
 import Footer from './components/Footer';
+import Contacts from './components/Contacts';
 
 
 
@@ -15,9 +16,8 @@ function App() {
         <Routes>
           <Route index path="/" element={ <Home />}/>
           <Route path="/Properties" element={ <Properties/>}/>
-          {/*<Route path="/Rent" element={ <Rent/>}/>
-          <Route path="/Sell" element={ <Sell/>}/>
-          <Route path="/Contacts" element={ <Contacts/>}/> */}
+          {/* <Route path="/Rent" element={ <Rent/>}/> */}
+          <Route path="/Contacts" element={ <Contacts/>}/>
         </Routes>
         <Footer/>
       </div>

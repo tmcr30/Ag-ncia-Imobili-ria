@@ -12,7 +12,6 @@ export default function Navbar(){
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/Properties">Comprar</NavLink></li>
                     <li><NavLink to="/Rent">Arrendar</NavLink></li>
-                    <li><NavLink to="/Sell">Vender</NavLink></li>
                     <li><NavLink to="/Contacts">Contactos</NavLink></li>
                     <li className="login"><NavLink to="/login">Login</NavLink></li>
                 </ul>
