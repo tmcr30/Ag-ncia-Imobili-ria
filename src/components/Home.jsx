@@ -8,7 +8,7 @@ export default function Home(){
                 <div className="searchbar">
                     <form className="searchbarHome">
                         <input type="text" placeholder="Pesquisar por local" name="search"/>
-                        <button type="submit">Search</button>
+                        <button className="searchbtn" type="submit">Search</button>
                     </form>
                 </div>
             </div>
