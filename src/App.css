@@ -289,10 +289,15 @@ form input[type="checkbox"], form input[type="radio"]{
 }   
 
 .container {   
-  padding: 25px;
-  margin-bottom: 26rem;
-    
+  padding: 2rem;
+  margin-bottom: 12rem;
 }   
+
+.loginForm{
+  display: flex;
+  justify-content: center;
+  padding-top: 13rem;
+}
 
 
 
