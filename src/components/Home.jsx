@@ -9,28 +9,28 @@ export default function Home() {
       name: 'Moradia T4',
       price: "750.000",
       location: 'Sintra',
-      imageUrl: '/images/moradia2.1.jpg'
+      imageUrl: ['/images/moradia2.1.jpg', '/images/sala4.jpg', '/images/quarto3.jpg']
     },
     {
       id: 2,
       name: 'Moradia T2',
       price: "250.000",
       location: 'Algueirão-Mem Martins',
-      imageUrl: '/images/moradia1.2.jpg'
+      imageUrl: ['/images/moradia1.2.jpg', '/images/moradia.jpg','/images/quarto.jpg','/images/sala.jpg']
     },
     {
       id: 3,
       name: 'Apartamento T3',
       price: "350.000",
       location: 'Lisboa',
-      imageUrl: '/images/apartamento.jpg'
+      imageUrl: ['/images/apartamento.jpg', '/images/sala2.jpg', '/images/quarto.jpg']
     },
     {
       id: 4,
       name: 'Apartamento T2',
       price: "180.000",
       location: 'Agualva-Cacém',
-      imageUrl: '/images/apartamento1.jpg'
+      imageUrl: ['/images/apartamento1.jpg','/images/quarto2.jpg','/images/sala.jpg']
     },
   ];
 
@@ -78,7 +78,7 @@ export default function Home() {
               <div className="flip-card" key={property.id} onClick={() => handleCardClick(property)}>
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <img className="casa1" src={property.imageUrl} alt={property.name} />
+                    <img className="casa1" src={property.imageUrl[0]} alt={property.name} />
                   </div>
                   <div className="flip-card-back">
                     <h3>{property.name}</h3>
@@ -92,7 +92,7 @@ export default function Home() {
               <div className="flip-card" key={property.id} onClick={() => handleCardClick(property)}>
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <img className="casa1" src={property.imageUrl} alt={property.name} />
+                    <img className="casa1" src={property.imageUrl[0]} alt={property.name} />
                   </div>
                   <div className="flip-card-back">
                     <h3>{property.name}</h3>
