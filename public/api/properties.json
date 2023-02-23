@@ -12,8 +12,9 @@
                     "3 Wc's",
                     "Piscina"
                 ],
-                "price":"450.000",
-                "image":"/public/images/casa1.png"
+                "price":"750.000",
+                "image":"/images/moradia2.1.jpg",
+                "location": "Sintra"
             },
             {
                 "property_id": 2,
@@ -24,7 +25,8 @@
                     "2 Wc's"
                 ],
                 "price":"250.000",
-                "image":"/public/images/casa3.png"
+                "image":"/images/moradia1.2.jpg",
+                "location": "Sintra"
             }
         ]
     },
@@ -36,13 +38,14 @@
                 "property_id": 3,
                 "name": "Apartamento T3",
                 "details":[
-                    "Estoril",
+                    "Lisboa",
                     "3 Quartos", 
                     "2 Wc's",
                     "Garagem"
                 ],
                 "price":"350.000",
-                "image":"/public/images/casa2.png"
+                "image":"/images/apartamento.jpg",
+                "location": "Lisboa"
             },
             {
                 "property_id": 4,
@@ -53,7 +56,8 @@
                     "1 Wc's"
                 ],
                 "price":"180.000",
-                "image":"/public/images/casa4.png"
+                "image":"/images/apartamento1.jpg",
+                "location": "Sintra"
             }
         ]    
     }

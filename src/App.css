@@ -74,17 +74,10 @@ body{
   border: 2px solid;
 }
 
-.searchbtn{
-  margin: 1rem;
-  padding: 10px;   
-  border: none;   
-  cursor: pointer;
+.listingHome{
+  display: flex;
+  justify-content:space-around;
 }
-
-.searchbtn:hover {   
-  opacity: 0.7;   
-}   
-
 
 .flip-card {
   position:relative;
@@ -157,6 +150,13 @@ body{
   padding-top: 10rem;
   padding-bottom: 5rem;
   cursor: pointer;
+}
+
+.cardPropertyDetails{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
 }
 
 @media (max-width: 460px) {

@@ -13,7 +13,8 @@
                     "Garagem"
                 ],
                 "price":"1.800",
-                "image":"/public/images/casa2.png"
+                "image":"/images/casa2.png",
+                "location": "Cascais"
             },
             {
                 "property_id": 2,
@@ -24,7 +25,8 @@
                     "1 Wc's"
                 ],
                 "price":"800",
-                "image":"/public/images/casa4.png"
+                "image":"/images/casa4.png",
+                "location": "Sintra"
             },
             {
                 "property_id": 3,
@@ -35,7 +37,8 @@
                     "2 Wc's"
                 ],
                 "price":"950",
-                "image":"/public/images/casa4.png"
+                "image":"/images/casa4.png",
+                "location": "Sintra"
             },
             {
                 "property_id": 4,
@@ -47,7 +50,8 @@
                     "Garagem"
                 ],
                 "price":"1.100",
-                "image":"/public/images/casa4.png"
+                "image":"/images/casa4.png",
+                "location": "Lisboa"
             }
         ]    
     },
@@ -65,7 +69,8 @@
                     "Piscina"
                 ],
                 "price":"2.500",
-                "image":"/public/images/casa1.png"
+                "image":"/images/casa1.png",
+                "location": "Sintra"
             },
             {
                 "property_id": 6,
@@ -76,7 +81,8 @@
                     "2 Wc's"
                 ],
                 "price":"1.600",
-                "image":"/public/images/casa3.png"
+                "image":"/images/casa3.png",
+                "location": "Sintra"
             },
             {
                 "property_id": 7,
@@ -88,7 +94,8 @@
                     "Piscina"
                 ],
                 "price":"1.750",
-                "image":"/public/images/casa3.png"
+                "image":"/images/casa3.png",
+                "location": "Sintra"
             }
         ]
     }
