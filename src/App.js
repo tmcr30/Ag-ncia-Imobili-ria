@@ -8,6 +8,7 @@ import Contacts from './components/Contacts';
 import Rent from './components/Rent';
 import Login from './components/Login';
 
+
 function App() {
   return (
     <BrowserRouter>

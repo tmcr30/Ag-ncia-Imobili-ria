@@ -8,6 +8,8 @@ export default function Home() {
       id: 1,
       name: 'Moradia T4',
       price: "750.000",
+      rooms:"4 Quartos ",
+      wc:"3 Wc's",
       location: 'Sintra',
       imageUrl: ['/images/moradia2.1.jpg', '/images/sala4.jpg', '/images/quarto3.jpg']
     },
@@ -15,13 +17,17 @@ export default function Home() {
       id: 2,
       name: 'Moradia T2',
       price: "250.000",
-      location: 'Algueirão-Mem Martins',
+      rooms:"2 Quartos ",
+      wc:"1 Wc's",
+      location: 'Terrugem',
       imageUrl: ['/images/moradia1.2.jpg', '/images/moradia.jpg','/images/quarto.jpg','/images/sala.jpg']
     },
     {
       id: 3,
       name: 'Apartamento T3',
       price: "350.000",
+      rooms:"3 Quartos ",
+      wc:"2 Wc's",
       location: 'Lisboa',
       imageUrl: ['/images/apartamento.jpg', '/images/sala2.jpg', '/images/quarto.jpg']
     },
@@ -29,6 +35,8 @@ export default function Home() {
       id: 4,
       name: 'Apartamento T2',
       price: "180.000",
+      rooms:"2 Quartos ",
+      wc:"1 WC",
       location: 'Agualva-Cacém',
       imageUrl: ['/images/apartamento1.jpg','/images/quarto2.jpg','/images/sala.jpg']
     },
@@ -103,7 +111,7 @@ export default function Home() {
               </div>
             ))
       )}
-      </div>
+      </div> 
     </main>
   );
 }
