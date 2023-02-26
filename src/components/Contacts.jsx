@@ -6,25 +6,45 @@ export default function Contacts(){
   const [formData, setFormData] = useState({
     firstName: "",
     email:"",
+    number:"",
     comments:"",
+    subject:"",
+    name:"",
   });
     
   function handleChange(event){
-    setFormData(prevFormData => {
-    
-      const {name, value, type, checked} = event.target;
-          
-      return{
-        ...prevFormData,
-        [name]: type === "checkbox" ? checked : value
+    const {name, value, type} = event.target;
+  
+    if (type === "text" && name === "firstName") {
+      
+      const regex = /^[a-zA-Z\s]*$/;
+      if (regex.test(value)) {
+        setFormData(prevFormData => ({...prevFormData, [name]: value}));
       }
-    });
+    } else if (type === "tel" && name === "number") {
+      
+      const regex = /^[0-9]*$/;
+      if (regex.test(value)) {
+        setFormData(prevFormData => ({...prevFormData, [name]: value}));
+      }
+    } else {
+      setFormData(prevFormData => ({...prevFormData, [name]: value}));
+    }
   }
-    
+
   function handleSubmit(event){
     
     event.preventDefault();
-        
+    
+    setFormData({
+      firstName: "",
+      email:"",
+      number:"",
+      comments:"",
+      subject:"",
+      name:"",
+    });
+
     console.log(formData);
   }
 
@@ -47,6 +67,7 @@ export default function Contacts(){
           name="firstName"
           onChange={ handleChange }
           value={formData.firstName}
+          required
         />
         <input
           type= "email"
@@ -55,14 +76,17 @@ export default function Contacts(){
           name="email"
           onChange={ handleChange }
           value={formData.email}
+          required
         />
         <input
           type= "tel"
           aria-label="Telefone"
           placeholder='Telefone'
           name="number"
+          pattern="[0-9]{9}"
           onChange={ handleChange }
           value={formData.number}
+          required
         />
         <input
           type= "text"
@@ -71,6 +95,7 @@ export default function Contacts(){
           name="subject"
           onChange={ handleChange }
           value={formData.subject}
+          required
         />
         <textarea
           aria-label="Comentários"
@@ -78,6 +103,7 @@ export default function Contacts(){
           name="comments"
           onChange={ handleChange }
           value={ formData.comments }
+          required
         />
         <label className="checkbox">
           <input
