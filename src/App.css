@@ -86,6 +86,7 @@ body{
   width: 300px;
   height: 200px;
   perspective: 1000px;
+  padding-bottom: 2.5rem
 }
 
 .flip-card-inner {
@@ -160,22 +161,13 @@ body{
   height: 200px;
 }
 
-@media (max-width: 460px) {
-  .cards {
-    width: 360px;
-    height: 800px;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-}
 
 form input, form textarea{
   display: block;
   border: 2px solid;
   margin: 8px 0; 
   padding: 12px 20px;
+  
 }
 
 form label{
@@ -185,32 +177,24 @@ form label{
 
 form input[type="checkbox"], form input[type="radio"]{
   display: block;
+  
 }
 
+
 .footer{
-  position: relative;
+  position: fixed;
   font-size: 1rem;
-  max-width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 300;
   background: #202122;
   color: #FFF;
-  width: auto;
-  height: 2.5rem;
+  max-height: 90px;
+  width: 100%;
+  bottom: 0;
 }
 
-@media (min-width: 991px) {
-  .footer {
-    padding: 1.75rem 2rem;
-  }
-}
-@media (min-width: 520px) {
-  .footer {
-    padding: 1.75rem 1rem;
-  }
-}
 
 .footer p {
   font-size: 1em;
@@ -244,6 +228,7 @@ form input[type="checkbox"], form input[type="radio"]{
 
 .buttonContact{
   margin: 1rem;
+  margin-bottom: 5rem;
   padding: 10px;   
   border: none;   
   cursor: pointer;
@@ -262,12 +247,13 @@ form input[type="checkbox"], form input[type="radio"]{
   justify-content: center;
   margin-top: auto;
   padding-top: 1rem;
-  padding-bottom: 0.3rem;
+  padding-bottom: 1rem;
 }
 
 .divBackground{
   background-color: #5a5a5aad;
-  position: relative
+  position: relative;
+  
 }
 
 .loginForm button {     
@@ -319,3 +305,189 @@ form input[type="checkbox"], form input[type="radio"]{
 }
 
 
+@media (max-width: 1240px) {
+  .cards {
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    cursor: pointer;
+  }
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 25px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+
+@media (max-width: 300px){
+  nav h1{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #FFF;
+    font-size: 1.2em;
+  }
+
+  .h2Contact{
+    margin-left:6%;
+    font-size: 1.1em;
+  }
+
+  .formContacts{
+    margin: auto ;
+    position: relative;
+    margin-left: 10%;
+    padding-top: 0.5rem;
+    flex-flow: column wrap;
+  }
+
+  .divBackground{
+    background-color: #5a5a5aad;
+    position: relative;
+  }
+
+}
+
+
+@media (max-width: 500px){
+  nav h1{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #FFF;
+    font-size: 1.2em;
+  }
+
+  .h2Contact{
+    margin-left:6%;
+    font-size: 1.1em;
+  }
+
+  .formContacts{
+    margin: auto;
+    position: relative;
+    margin-left: 25%;
+    padding-top: 0.5rem;
+    flex-flow: column wrap;
+  }
+
+  .divBackground{
+    background-color: #5a5a5aad;
+    position: relative;
+
+  }
+}
+
+@media (max-width: 700px){
+  nav h1{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #FFF;
+    font-size: 1.2em;
+  }
+
+  .h2Contact{
+    margin-left:6%;
+    font-size: 1.1em;
+  }
+
+  .formContacts{
+    margin: auto;
+    position: relative;
+    margin-left: 45%;
+    padding-top: 0.5rem;
+    flex-flow: column wrap;
+  }
+
+  .divBackground{
+    background-color: #5a5a5aad;
+    position: relative;
+    padding-bottom: 50%;
+    
+  }
+
+}
+
+@media (max-width: 950px){
+  nav h1{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #FFF;
+    font-size: 1.2em;
+  }
+
+  .h2Contact{
+    margin-left:6%;
+    font-size: 1.2em;
+  }
+
+  .formContacts{
+    margin: auto;
+    position: relative;
+    margin-left: 40%;
+    padding-top: 0.5rem;
+    flex-flow: column wrap;
+  }
+
+  .divBackground{
+    background-color: #5a5a5aad;
+    position: relative;
+    padding-bottom: 25%;
+    
+  }
+
+}
+
+@media (max-width: 1000px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background-color: #202122;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+  }
+
+  nav ul.open {
+    display: flex;
+    z-index: 1;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

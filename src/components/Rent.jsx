@@ -17,14 +17,14 @@ export default function Rent() {
     return (
         <main id="properties">
             {
-                properties.map( category => (
-                    <section key={ category.category_id }>
+                properties.map( (category, categoryIndex) => (
+                    <section key={ categoryIndex }>
                         <div className="propertyClass"><h2>{ category.category }</h2></div>
                         <div className="listing">
                         {
                             category.properties.map(
-                                property => (
-                                    <div key={ property.properties_id }>   
+                                (property, propertyIndex) => (
+                                    <div key={ propertyIndex }>   
                                         <div className="cards-properties">
                                             <div className="flip-card">
                                                 <div className="flip-card-inner">

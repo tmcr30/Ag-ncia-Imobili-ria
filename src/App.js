@@ -12,17 +12,15 @@ import Login from './components/Login';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Navbar/>
-        <Routes>
-          <Route index path="/" element={ <Home />}/>
-          <Route path="/Properties" element={ <Properties/>}/>
-          <Route path="/Rent" element={ <Rent/>}/>
-          <Route path="/Contacts" element={ <Contacts/>}/>
-          <Route path="/login" element={ <Login/>}/>
-        </Routes>
-        <Footer/>
-      </div>
+      <Navbar/>
+      <Routes>
+        <Route index path="/" element={ <Home />}/>
+        <Route path="/Properties" element={ <Properties/>}/>
+        <Route path="/Rent" element={ <Rent/>}/>
+        <Route path="/Contacts" element={ <Contacts/>}/>
+        <Route path="/login" element={ <Login/>}/>
+      </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
